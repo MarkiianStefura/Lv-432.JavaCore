@@ -55,7 +55,13 @@ class HomeTusk3 {
         String country3 = br.readLine();
         System.out.println("How long did you tolk?");
         int cost3 = Integer.parseInt(br.readLine());
-        System.out.println("You did to " + country3 + " you coll is cost " + c3*cost3 );
+        System.out.println("You did to " + country3 + " you coll is cost " + c3*cost3);
+
+        int sum1 = c1*cost1;
+        int sum2 = c2*cost2;
+        double sum3 = c3*cost3;
+
+        System.out.println("All colls cost " + (sum1+sum2+sum3));
 
 
 
