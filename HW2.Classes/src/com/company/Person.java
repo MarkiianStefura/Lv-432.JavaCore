@@ -3,6 +3,7 @@ package com.company;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.time.LocalDate;
 import java.time.Year;
 
 public class Person {
@@ -46,11 +47,10 @@ public class Person {
         if (birthYear == 0) {
             return 0;
         }
-        return Year.now().getValue() - birthYear;
+        return LocalDate.now().getYear() - birthYear;
     }
 
-    public void input() throws IOException {
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+    public void input(BufferedReader bf) throws IOException {
 
         System.out.print("Person first name = ");
         this.firstName = bf.readLine();

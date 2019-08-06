@@ -8,13 +8,15 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         // write your code here
-        task1();
-        task2();
-        task3();
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+
+        task1(bf);
+        task2(bf);
+        task3(bf);
     }
 
-    private static void task1() throws IOException {
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+    private static void task1(BufferedReader bf) throws IOException {
+
 
         System.out.print("Radius = ");
         int radius = Integer.parseInt(bf.readLine());
@@ -23,12 +25,11 @@ public class Main {
         System.out.println("Area = " + (Math.PI * radius * radius));
     }
 
-    private static void task2() throws IOException {
+    private static void task2(BufferedReader bf) throws IOException {
         String name;
         String address;
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Whats is your name?");
+        System.out.print("Whats is your name?");
         name = bf.readLine();
 
         System.out.println("Where are you live, " + name + "?");
@@ -37,31 +38,30 @@ public class Main {
         System.out.println(name + " lives in " + address);
     }
 
-    private static void task3() throws IOException {
+    private static void task3(BufferedReader bf) throws IOException {
         int c1;
         int c2;
         int c3;
         int t1;
         int t2;
         int t3;
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.print("Call from country c1 costs = ");
         c1 = Integer.parseInt(bf.readLine());
 
-        System.out.println("Call from country c2 costs = ");
+        System.out.print("Call from country c2 costs = ");
         c2 = Integer.parseInt(bf.readLine());
 
-        System.out.println("Call from country c3 costs = ");
+        System.out.print("Call from country c3 costs = ");
         c3 = Integer.parseInt(bf.readLine());
 
-        System.out.println("Talk t1 continued = ");
+        System.out.print("Talk t1 continued = ");
         t1 = Integer.parseInt(bf.readLine());
 
-        System.out.println("Talk t2 continued = ");
+        System.out.print("Talk t2 continued = ");
         t2 = Integer.parseInt(bf.readLine());
 
-        System.out.println("Talk t3 continued = ");
+        System.out.print("Talk t3 continued = ");
         t3 = Integer.parseInt(bf.readLine());
 
         System.out.println("First call = " + c1 * t1);
