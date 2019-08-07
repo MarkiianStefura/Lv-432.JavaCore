@@ -1,11 +1,20 @@
-# Compiled class file
-*.class
+*.classpath
+*.project
+
+/HomeWork1/bin/
+/HomeWork1/.settings/
+
+/HomeWork2/bin/
+/HomeWork2/.settings/
+
+
 
 # Log file
 *.log
 
 # BlueJ files
 *.ctxt
+/new/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
