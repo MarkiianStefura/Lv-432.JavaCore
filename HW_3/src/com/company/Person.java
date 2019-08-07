@@ -1,6 +1,9 @@
 package com.company;
 
-import java.util.Calendar;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.time.LocalDate;
 
 public class Person {
     private String firstName;
@@ -13,6 +16,12 @@ public class Person {
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public Person(String firstName, String lastName, int birthYear) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthYear = birthYear;
     }
 
     public String getFirstName() {
@@ -40,13 +49,18 @@ public class Person {
     }
 
     public int getAge() {
-        return Calendar.getInstance().get(Calendar.YEAR) - birthYear;
+        if (this.birthYear == 0) return 0;
+        return LocalDate.now().getYear() - birthYear;
     }
 
-    public void inputInformation(String firstName, String lastName, int birthYear) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.birthYear = birthYear;
+    public void inputInformation() throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Write first name: ");
+        this.firstName = br.readLine();
+        System.out.println("Write last name: ");
+        this.lastName = br.readLine();
+        System.out.println("Write birth year: ");
+        this.birthYear = Integer.parseInt(br.readLine());
     }
 
     public String outputInformation() {
