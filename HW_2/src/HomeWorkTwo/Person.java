@@ -41,16 +41,12 @@ class Person {
 
 	}
 
-	LocalDate local = LocalDate.now();
-
 	public int getAge() {
-
-		// calDate local = LocalDate.now();
-		return local.getYear() - birthYear;
+		return LocalDate.now().getYear() - birthYear;
 	}
 
-	public void input() {
-		Scanner scn = new Scanner(System.in);
+	public void input(Scanner scn) {
+
 		System.out.println("Enter firstName of Person ");
 		firstName = scn.next();
 		System.out.println("Enter lastName of Person ");
