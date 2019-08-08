@@ -7,9 +7,9 @@ import java.time.LocalDate;
 import java.time.Year;
 
 public class Person {
+    private int birthYear;
     private String firstName;
     private String lastName;
-    private int birthYear;
 
     public String getFirstName() {
         return firstName;
@@ -44,10 +44,7 @@ public class Person {
     }
 
     public int getAge() {
-        if (birthYear == 0) {
-            return 0;
-        }
-        return LocalDate.now().getYear() - birthYear;
+        return birthYear == 0 ? 0: LocalDate.now().getYear() - birthYear;
     }
 
     public void input(BufferedReader bf) throws IOException {
