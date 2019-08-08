@@ -1,0 +1,14 @@
+package com.company;
+
+public enum HTTPError {
+    BAD_REQUEST,
+    UNAUTHORIZED,
+    PAYMENT_REQUIRED,
+    FORBIDDEN,
+    NOT_FOUND,
+    METHOD_NOT_ALLOWED,
+    REQUEST_TIMEOUT,
+    IM_A_TEAPOT,
+    UNKNOWN_HTTP_ERROR
+}
+
