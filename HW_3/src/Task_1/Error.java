@@ -1,0 +1,6 @@
+package Task_1;
+
+public enum Error {
+	BAD_REQUEST,UNAUTHORIZED,FORBIDDEN,PAYMENT_REQUIRED,NOT_FOUND
+
+}
