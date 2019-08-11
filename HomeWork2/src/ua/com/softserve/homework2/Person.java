@@ -1,5 +1,7 @@
 package ua.com.softserve.homework2;
 
+import java.time.LocalDate;
+
 public class Person {
 
     private String firstName;
@@ -40,7 +42,7 @@ public class Person {
     }
 
     public int getAge() {
-        return (2019 - birthYear);
+        return (LocalDate.now().getYear() - birthYear);
     }
 
     public void output() {
