@@ -18,8 +18,9 @@ public class MainTest {
                 .addClass(Main.class)
                 .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
     }
-    Float one = 4.0f;
-    Float two = 7.1f;
+
+    int one = 4;
+    int two = 7;
 
     @Test
     public void range() {
@@ -28,11 +29,11 @@ public class MainTest {
 
     @Test
     public void maxValue() {
-        assertTrue(two > one);
+        assertEquals(two, Main.maxValue(one, two));
     }
 
     @Test
     public void minValue() {
-        assertFalse(two > one);
+        assertEquals(one, Main.minValue(one, two));
     }
 }
