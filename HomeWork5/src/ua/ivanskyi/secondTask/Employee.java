@@ -1,6 +1,6 @@
 package ua.ivanskyi.secondTask;
 
-public class Employee implements Calculate {
+public class Employee {
 
 	private String employeeld;
 	private String name;
@@ -31,13 +31,5 @@ public class Employee implements Calculate {
 	public String toString() {
 		return "Employee [employeeld=" + employeeld + ", name=" + name + "]";
 	}
-
-	@Override
-	public int calculatePay() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	
 
 }

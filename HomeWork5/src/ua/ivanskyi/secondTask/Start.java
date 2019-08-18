@@ -2,9 +2,9 @@ package ua.ivanskyi.secondTask;
 
 public class Start {
 
-	static void sort(Employee[] mass) {
+	static void sort(Calculate[] mass) {
 
-		Employee tmp;
+		Calculate tmp;
 
 		for (int x = 0; x < mass.length - 1; x++) {
 			for (int z = x + 1; z < mass.length; z++) {
@@ -23,19 +23,19 @@ public class Start {
 
 	public static void main(String[] args) {
 
-		Employee es1 = new SalaryEmployee("manager", "Ivan", "123akkfs88535", 9340);
-		Employee es2 = new SalaryEmployee("manager", "Petro", "7586kvndfo44", 8712);
-		Employee es3 = new SalaryEmployee("guard", "Andriy", "88vdfvd77a90v", 5873);
-		Employee es4 = new SalaryEmployee("accountant", "Maria", "87vdfv9090dv", 7890);
+		Calculate es1 = new SalaryEmployee("manager", "Ivan", "123akkfs88535", 9340);
+		Calculate es2 = new SalaryEmployee("manager", "Petro", "7586kvndfo44", 8712);
+		Calculate es3 = new SalaryEmployee("guard", "Andriy", "88vdfvd77a90v", 5873);
+		Calculate es4 = new SalaryEmployee("accountant", "Maria", "87vdfv9090dv", 7890);
 
-		Employee ec1 = new ContractEmployee("builder", "Ostap", "000dfsf90sf", 20, 240);
-		Employee ec2 = new ContractEmployee("builder", "Stepan", "999vsdv8sv8", 25, 240);
-		Employee ec3 = new ContractEmployee("cleaner", "Nadia", "4564h64j564h6", 15, 180);
+		Calculate ec1 = new ContractEmployee("builder", "Ostap", "000dfsf90sf", 20, 240);
+		Calculate ec2 = new ContractEmployee("builder", "Stepan", "999vsdv8sv8", 25, 240);
+		Calculate ec3 = new ContractEmployee("cleaner", "Nadia", "4564h64j564h6", 15, 180);
 
-		Employee[] mass = { es1, es2, es3, es4, ec1, ec2, ec3 };
+		Calculate[] mass = { es1, es2, es3, es4, ec1, ec2, ec3 };
 		Start.sort(mass);
 
-		for (Employee x : mass) {
+		for (Calculate x : mass) {
 			System.out.println(x.toString());
 		}
 
