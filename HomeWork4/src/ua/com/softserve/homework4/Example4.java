@@ -20,7 +20,7 @@ public class Example4 {
                 break;
             }
             if (arrayList[i] % 2 == 0) {
-                product1 *= arrayList[i];
+                product1 *= arrayList[i];  // Добуток, а потрібно кількість парних
                 continue;
             }
         }
