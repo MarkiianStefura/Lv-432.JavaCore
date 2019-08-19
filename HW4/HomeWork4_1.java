@@ -12,7 +12,7 @@ public class HomeWork4_1 {
 		
 		int mn[ ]= { 31, 30, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 		
-		for(int i = 0; i < mn.length; i++) {
+		for(int i = 0; i < mn.length; i++) {  //  Тут циклу не потрібно
 			if(i == mon-1) {
 				System.out.println("Month "+ mon +" have " + mn[i] + " days");
 			} else {
