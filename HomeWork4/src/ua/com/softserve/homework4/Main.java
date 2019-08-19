@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Enter the year the of car (2002/2006/2010/2013) : " );
         int carYear =  Integer.parseInt(br.readLine());
 
-        switch (carYear){
+        switch (carYear){       // Жорсткий хардкод
             case 2013:
                 System.out.println(arrayCars[0]);
                 break;
