@@ -25,13 +25,13 @@ public class Task3 {
     }
 
     private static int secondPositiveNumberPosition(int[] array) {
+        int num = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] > 0) {
-                for (int j = i + 1; j < array.length; j++) {
-                    if (array[j] > 0) {
-                        return j;
-                    }
-                }
+                num++;
+            }
+            if (num > 1) {
+                return i;
             }
         }
         return -1;
