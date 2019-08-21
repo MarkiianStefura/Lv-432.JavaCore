@@ -27,7 +27,7 @@ public class Start {
 
 		for (int x : days) {
 			if (x < 0) {
-				check = false;
+				check = false;  // break далі
 			}
 		}
 
