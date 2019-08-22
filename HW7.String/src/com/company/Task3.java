@@ -16,7 +16,7 @@ public class Task3 {
         String[] input = scanner.nextLine().split(" ");
         for (int i = 0; i < input.length; i++) {
             m = p.matcher(input[i]);
-            System.out.println(m.find() + " " + input[i]);
+            System.out.println(m.matches() + " " + input[i]);
         }
 
     }
