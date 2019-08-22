@@ -17,7 +17,5 @@ public class Employee {
 		return employeeld;
 	}
 
-	public void setEmployeeld(String employeeld) {
-		this.employeeld = employeeld;
-	}
+	
 }

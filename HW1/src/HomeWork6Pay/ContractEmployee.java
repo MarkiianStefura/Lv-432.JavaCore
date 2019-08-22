@@ -15,7 +15,7 @@ public class ContractEmployee extends Employee implements Pay {
 	@Override
 	public String toString() {
 		return "ContractEmployee [federalTaxIdmember=" + federalTaxIdmember + ", calculatePay()=" + calculatePay()
-				+ "]";
+				+ "]"+" Employeeld = " + getEmployeeld();
 	}
 
 	@Override
@@ -26,5 +26,10 @@ public class ContractEmployee extends Employee implements Pay {
 	public String getFederalTaxIdmember() {
 		return federalTaxIdmember;
 	}
+
+	public double getFixedPeid() {
+		return fixedPeid;
+	}
+	
 
 }

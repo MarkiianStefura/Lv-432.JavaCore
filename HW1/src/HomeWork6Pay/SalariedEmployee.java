@@ -17,14 +17,8 @@ public class SalariedEmployee extends Employee implements Pay {
 	@Override
 	public String toString() {
 		return "SalariedEmployee [socialSecurityNumber=" + socialSecurityNumber + ", calculatePay()=" + calculatePay()
-				+ "]";
+				+ "]"+" Employeeld = "+getEmployeeld();
 	}
-
-
-
-
-
-
 	@Override
 	public double calculatePay() {		
 		return hour * priseHour;
@@ -37,5 +31,6 @@ public class SalariedEmployee extends Employee implements Pay {
 	public void setSocialSecurityNumber(String socialSecurityNumber) {
 		this.socialSecurityNumber = socialSecurityNumber;
 	}
+	
 
 }
