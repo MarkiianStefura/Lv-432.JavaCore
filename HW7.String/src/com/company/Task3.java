@@ -8,7 +8,7 @@ public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String pattern = "(\\$\\d+\\.+\\d{1,2})";
+        String pattern = "(\\$\\d+\\.{1}+\\d{1,2})";
         Pattern p = Pattern.compile(pattern);
         Matcher m;
 
