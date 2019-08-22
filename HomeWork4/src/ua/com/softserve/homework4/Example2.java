@@ -23,7 +23,7 @@ public class Example2 {
         int resault = 0;
         for (int i = 0; i < numbers.length / 2; i++) {
             if (numbers[i] > 0) {
-                resault = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4];
+                resault = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4];  // Такий код архітектурно неправильний, а якщо кількість буде змінюватися
             } else {
                 for (int j = 5; i < numbers.length; i++) {
                     resault = numbers[5] * numbers[6] * numbers[7] * numbers[8] * numbers[9];

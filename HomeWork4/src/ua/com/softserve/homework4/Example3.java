@@ -28,7 +28,7 @@ public class Example3 {
         int[] array = new int[] {-2, 3, 3, -5, 8};
         for (int i = 0; i < array.length; i++) {
             if(array[i] > 0) {
-                for (int s = i + 1; s < array.length ; s++ ) {
+                for (int s = i + 1; s < array.length ; s++ ) {  //  Вкрай нераціонально
                     if (array[s] > 0) {
                         secondPositive = s;
                         secondPositivefound = true;

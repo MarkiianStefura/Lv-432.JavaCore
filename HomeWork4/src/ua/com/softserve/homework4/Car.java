@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 public class Car {
 
-    BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader bf = new BufferedReader(new InputStreamReader(System.in)); // відкривати у методі
     String name;
     String type;
     int yearOfProduct;
