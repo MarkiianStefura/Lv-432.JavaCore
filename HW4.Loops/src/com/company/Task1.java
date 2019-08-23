@@ -17,7 +17,6 @@ public class Task1 {
             System.out.print("Enter number of month 1-12: ");
             n = safeParseInt(safeReadLine(bf));
         }
-
         System.out.println("Days in " + n + " month : " + daysInMonth[n]);
     }
 

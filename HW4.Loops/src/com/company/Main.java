@@ -3,7 +3,6 @@ package com.company;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-
 import static com.company.Task1.writeDaysInMonth;
 import static com.company.Task2.enterTenInts;
 import static com.company.Task3.enterFiveInts;
@@ -21,12 +20,5 @@ public class Main {
         enterFiveInts(bf);
 
         displayCars(bf);
-
     }
-
-
-
-
-
-
 }

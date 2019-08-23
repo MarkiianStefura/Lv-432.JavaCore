@@ -47,7 +47,6 @@ public class Task3 {
                 pos = i;
             }
         }
-
         System.out.println("minimum array[" + pos + "] = " + min);
     }
 

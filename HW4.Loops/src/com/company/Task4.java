@@ -23,7 +23,7 @@ public class Task4 {
         for (Car car : cars
         ) {
             if (car.getYearOfProduction() == year) {
-                System.out.println(car.toString());
+                System.out.println(car);
             }
         }
 
@@ -31,7 +31,6 @@ public class Task4 {
 
         System.out.println("Sorted cars :");
         printCars(cars);
-
     }
 
     private static void printCars(Car[] cars) {
