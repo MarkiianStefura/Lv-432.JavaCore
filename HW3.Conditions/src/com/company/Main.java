@@ -1,10 +1,10 @@
 package com.company;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 import static com.company.Util.*;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,11 +17,11 @@ public class Main {
         readHTTPErrorCode(bf);
 
         dogBreedTask(bf);
-
     }
 
     /**
      * Read 3 float numbers and check: are they all belong to the range [-5,5]
+     *
      * @param bf
      */
     private static void floatNumbersTask(BufferedReader bf) {
@@ -40,6 +40,7 @@ public class Main {
 
     /**
      * Read 3 integer numbers and write max and min of them
+     *
      * @param bf
      */
     private static void intNumbersTask(BufferedReader bf) {
@@ -59,6 +60,7 @@ public class Main {
     /**
      * Read number of HTTP Error (400, 401,402, ...)
      * and write the name of this error \n(Declare enum HTTPError)
+     *
      * @param bf
      */
     private static void readHTTPErrorCode(BufferedReader bf) {
@@ -71,6 +73,7 @@ public class Main {
      * Create 3 instances of type Dog.
      * Check if there is no two dogs with the same name.
      * Display the name and the kind of the oldest dog.
+     *
      * @param bf
      */
     private static void dogBreedTask(BufferedReader bf) {
@@ -79,9 +82,9 @@ public class Main {
         Dog dog3 = new Dog(7, Breed.GERMAN_SHEPHERD, "Kotyk");
 
         System.out.println("Is there two dogs with the same name: " +
-                (Dog.isSameName(dog1,dog2)|| Dog.isSameName(dog2,dog3) || Dog.isSameName(dog1,dog3)));
+                (Dog.isSameName(dog1, dog2) || Dog.isSameName(dog2, dog3) || Dog.isSameName(dog1, dog3)));
 
-        System.out.println("Oldest dog: " + Dog.oldestDog(dog1, Dog.oldestDog(dog2,dog3)).toString());
+        System.out.println("Oldest dog: " + Dog.oldestDog(dog1, Dog.oldestDog(dog2, dog3)).toString());
     }
 }
 

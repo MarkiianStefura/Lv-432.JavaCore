@@ -35,8 +35,18 @@ public class Dog {
         this.name = name;
     }
 
+    public Dog(Breed breed, String name) {
+        this.breed = breed;
+        this.name = name;
+    }
+
+    public Dog(int age, Breed breed) {
+        this.age = age;
+        this.breed = breed;
+    }
+
     public static boolean isSameName(Dog d1, Dog d2) {
-        return d1.getName().equals(d2.getName());
+        return (d1.getName() == null ? d2.getName() == null : d1.getName().equals(d2.getName()));
     }
 
     public static Dog oldestDog(Dog d1, Dog d2) {

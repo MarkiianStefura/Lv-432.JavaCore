@@ -79,8 +79,8 @@ public class Util {
             System.out.println("Error encountered parsing user input: "
                     + e.getMessage());
             System.out.println("Setting user input to 0");
-            return f;
         }
+        return f;
 
     }
 
@@ -93,8 +93,7 @@ public class Util {
             System.out.println("Error encountered parsing user input: "
                     + e.getMessage());
             System.out.println("Setting user input to 0");
-            return i;
         }
-
+        return i;
     }
 }
