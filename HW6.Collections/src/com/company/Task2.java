@@ -38,25 +38,21 @@ public class Task2 {
 
     private static void removingOrestOrOther(Map<String, String> personsMap, String... otherNames) {
         if (otherNames.length == 0) {
-            removeElement(personsMap, "Orest");
+            removeElementByValue(personsMap, "Orest");
         } else {
             for (String nameToRemove : otherNames) {
-                removeElement(personsMap, nameToRemove);
+                removeElementByValue(personsMap, nameToRemove);
             }
         }
     }
 
     private static boolean isSameName(Map<String, String> personsMap) {
-        Set<String> uniqueNames = new HashSet<>();
-        for (Map.Entry<String, String> entry : personsMap.entrySet()) {
-            if (!uniqueNames.add(entry.getValue())) {
-                return true;
-            }
-        }
-        return false;
+        Set<String> uniqueNames =  new HashSet<>();
+        uniqueNames.addAll(personsMap.values());
+        return uniqueNames.size() != personsMap.size();
     }
 
-    private static void removeElement(Map<String, String> personsMap, String nameToRemove) {
+    private static void removeElementByValue(Map<String, String> personsMap, String nameToRemove) {
         Iterator iterator = personsMap.entrySet().iterator();
         while (iterator.hasNext()) {
             Map.Entry entry = (Map.Entry) iterator.next();
