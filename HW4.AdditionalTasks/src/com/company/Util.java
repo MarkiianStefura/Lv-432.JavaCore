@@ -26,9 +26,8 @@ public class Util {
             System.out.println("Error encountered parsing user input: "
                     + e.getMessage());
             System.out.println("Setting user input to 0");
-            return i;
         }
-
+        return i;
     }
 
     public static double safeParseDouble(String s) {
@@ -40,8 +39,7 @@ public class Util {
             System.out.println("Error encountered parsing user input: "
                     + e.getMessage());
             System.out.println("Setting user input to 0");
-            return i;
         }
-
+        return i;
     }
 }

@@ -106,8 +106,6 @@ public class Tasks {
         for (int i = 0; i < arrayOfA.length; i++) {
             System.out.print("a[" + i + "] = ");
             arrayOfA[i] = safeParseInt(safeReadLine(bf));
-
-
         }
 
         for (int i = 0; i < arrayOfA.length; i++) {
@@ -122,7 +120,6 @@ public class Tasks {
             }
         }
         System.out.println("Index of unique number : " + n);
-
 
     }
 
@@ -170,7 +167,6 @@ public class Tasks {
             y = (n - 1) + Math.cos(y);
             n--;
         }
-
         System.out.println("y = " + y);
     }
 
@@ -216,7 +212,6 @@ public class Tasks {
             t = safeParseDouble(safeReadLine(bf));
 
         }
-
         System.out.println(Arrays.toString(timeInQueue));
     }
 
@@ -246,5 +241,4 @@ public class Tasks {
 
         System.out.println("Total mark : " + sum / (marks.length - 2));
     }
-
 }
