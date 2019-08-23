@@ -18,6 +18,8 @@ public class HomeWork_3_2 {
     public static boolean checkRange(float a,float b,float c){
         if ((a >= -5 & a <= 5)&(b >= -5 & b <= 5)&(c >= -5 & c <= 5)) return true;
         else return false;
+        // можна просто
+        // return (a >= -5 & a <= 5)&(b >= -5 & b <= 5)&(c >= -5 & c <= 5);
     }
     public static int maxValues(int a,int b,int c){
         return  Math.max(a,Math.max(b,c));
