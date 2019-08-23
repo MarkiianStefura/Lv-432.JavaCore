@@ -39,7 +39,7 @@ public class Person {
     }
 
     public int getAge(){
-        return (2019-birthDay);
+        return (2019-birthDay); // так робити не добре, на другий рік наша програма вже буде не актуальна. Треба отримати поточний рік. Подивись до класу LocalDate
     }
     public void output(){
         System.out.println(this.firstName+" "+this.lastName+" " +this.getAge());
