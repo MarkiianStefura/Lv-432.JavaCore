@@ -1,32 +1,19 @@
+
 package ua.com.softserve.homework6;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Student {
 
     private String name;
     private Integer course;
-    private static List<Student> students1 = new ArrayList<Student>();
+
     private static NameCompare nameComp = new NameCompare();
     private static CourseCompare courseComp = new CourseCompare();
 
     public static void printStudents(List<Student> students, Integer course) {
-        ListIterator<Student> list = students.listIterator();
-
-        while (list.hasNext()) {
-            Student element = (Student) list.next();
-            if (element.course.equals(course)) {
-                students1.add(element);
-            }
-
-        }
-        if (students1.isEmpty()) {
-            System.out.println("No such course number :(");
-        } else {
-            System.out.println(students1);
+        for (Iterator<Student> iterator = students.iterator(); iterator.hasNext(); ) {
+            Student student = iterator.next();
         }
     }
 

@@ -39,26 +39,6 @@ public class Example1 {
         Set<Integer> intersectSet = intersect(Set1, Set2);
         System.out.println(intersectSet);
 
-//        List<Integer> Set1 = new ArrayList<>();
-//        Set1.add(1);
-//        Set1.add(3);
-//        Set1.add(5);
-//        Set1.add(3);
-//        Set1.add(7);
-//        List<Integer> Set2 = new ArrayList<>();
-//        Set2.add(7);
-//        Set2.add(3);
-//        Set2.add(6);
-//        Set2.add(2);
-//        Set2.add(2);
-//
-//        Set1.addAll(Set2);
-//        System.out.println("Union -- " + Set1);
-//
-//        Set1.retainAll(Set2);
-//
-//        System.out.println("\n" +Set1);
-//        System.out.println(Set2);
     }
 
 }

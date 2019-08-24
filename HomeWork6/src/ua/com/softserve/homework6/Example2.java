@@ -1,9 +1,25 @@
 package ua.com.softserve.homework6;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Example2 {
+
+    public static boolean sameName(Map<String, String> personMap) {
+        Set<String> temporary = new HashSet<String>();
+        temporary.addAll(personMap.values());
+        return personMap.size() == temporary.size() ? false : true;
+
+    }
+
+    public static void remove(Map<String, String> personMap, String removeName) {
+        if (personMap.containsValue(removeName)) {
+            for (Iterator<Map.Entry<String, String>> iterator = personMap.entrySet().iterator(); iterator.hasNext(); ) {
+                if (iterator.next().getValue().equalsIgnoreCase(removeName)) {
+                    iterator.remove();
+                }
+            }
+        }
+    }
     public static void main(String[] args) {
 
         HashMap<String, String> personMap = new HashMap<>();
@@ -19,6 +35,8 @@ public class Example2 {
         personMap.put("Pol", "Yurii");
         personMap.put("Que", "Taras");
 
+        System.out.println(sameName(personMap));
+
         System.out.println("Before removing the value:");
         int i = 0;
         for (Map.Entry<String, String> entry : personMap.entrySet()) {
@@ -27,9 +45,7 @@ public class Example2 {
             i++;
         }
 
-        personMap.values().remove("Taras");
-        personMap.values().remove("Taras");
-
+        remove(personMap, "Taras");
         System.out.println("\nAfter removing the value:");
         int i1 = 0;
         for (Map.Entry<String, String> entry : personMap.entrySet()) {
